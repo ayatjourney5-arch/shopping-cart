@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE — Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span>L</span> LUXE
+        </div>
+
+        <button class="cart-button" id="cartButton">
+            🛒
+            <span>Cart</span>
+            <b id="cartCount">0</b>
+        </button>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <p class="eyebrow">CURATED COLLECTION</p>
+            <h1>Shop what<br><span>inspires you.</span></h1>
+            <p class="hero-text">
+                Discover beautifully designed essentials made for everyday life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <main class="container">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">OUR PICKS</p>
+                <h2>Featured Products</h2>
+            </div>
+
+            <p class="product-count">6 Products</p>
+        </div>
+
+        <section class="products" id="products">
+
+            <!-- Product 1 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+                         alt="Premium sneakers">
+                    <span class="tag">Popular</span>
+                </div>
+
+                <div class="product-info">
+                    <p class="category">FOOTWEAR</p>
+                    <h3>Urban Sneakers</h3>
+                    <div class="product-bottom">
+                        <strong>$89.00</strong>
+                        <button class="add-btn"
+                            data-id="1"
+                            data-name="Urban Sneakers"
+                            data-price="89"
+                            data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+                         alt="Minimal wrist watch">
+                </div>
+
+                <div class="product-info">
+                    <p class="category">ACCESSORIES</p>
+                    <h3>Minimal Watch</h3>
+                    <div class="product-bottom">
+                        <strong>$125.00</strong>
+                        <button class="add-btn"
+                            data-id="2"
+                            data-name="Minimal Watch"
+                            data-price="125"
+                            data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80"
+                         alt="Leather handbag">
+                    <span class="tag">New</span>
+                </div>
+
+                <div class="product-info">
+                    <p class="category">BAGS</p>
+                    <h3>Leather Tote</h3>
+                    <div class="product-bottom">
+                        <strong>$149.00</strong>
+                        <button class="add-btn"
+                            data-id="3"
+                            data-name="Leather Tote"
+                            data-price="149"
+                            data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80"
+                         alt="Modern chair">
+                </div>
+
+                <div class="product-info">
+                    <p class="category">HOME</p>
+                    <h3>Modern Chair</h3>
+                    <div class="product-bottom">
+                        <strong>$199.00</strong>
+                        <button class="add-btn"
+                            data-id="4"
+                            data-name="Modern Chair"
+                            data-price="199"
+                            data-image="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80"
+                         alt="Wireless headphones">
+                </div>
+
+                <div class="product-info">
+                    <p class="category">TECH</p>
+                    <h3>Studio Headphones</h3>
+                    <div class="product-bottom">
+                        <strong>$179.00</strong>
+                        <button class="add-btn"
+                            data-id="5"
+                            data-name="Studio Headphones"
+                            data-price="179"
+                            data-image="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80"
+                         alt="Home decor">
+                    <span class="tag">Trending</span>
+                </div>
+
+                <div class="product-info">
+                    <p class="category">DECOR</p>
+                    <h3>Modern Lamp</h3>
+                    <div class="product-bottom">
+                        <strong>$79.00</strong>
+                        <button class="add-btn"
+                            data-id="6"
+                            data-name="Modern Lamp"
+                            data-price="79"
+                            data-image="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Cart Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Cart Drawer -->
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+            <div>
+                <p class="eyebrow">YOUR BAG</p>
+                <h2>Shopping Cart</h2>
+            </div>
+
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <!-- JavaScript inserts cart items here -->
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="subtotal">$0.00</strong>
+            </div>
+
+            <div class="summary-row small">
+                <span>Shipping</span>
+                <span>Free</span>
+            </div>
+
+            <div class="total-row">
+                <span>Total</span>
+                <strong id="total">$0.00</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Proceed to Checkout →
+            </button>
+
+            <p class="secure">🔒 Secure checkout · Free shipping</p>
+
+        </div>
+
+    </aside>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        ✓ Added to your cart
+    </div>
+
+    <footer>
+        <p>© 2026 LUXE. Designed for SpireX Foundation Task 12.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
